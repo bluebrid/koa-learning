@@ -1,0 +1,10 @@
+# Dependency directories
+node_modules/
+# dotenv environment variables file
+.env
+
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json

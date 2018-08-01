@@ -1,0 +1,29 @@
+{
+  "name": "koa-learning",
+  "version": "1.0.0",
+  "description": "分析Koa 源码， 手写一个Koa项目",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bluebrid/koa-learning.git"
+  },
+  "keywords": [
+    "koa"
+  ],
+  "author": "Ivan Fan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bluebrid/koa-learning/issues"
+  },
+  "homepage": "https://github.com/bluebrid/koa-learning#readme",
+  "dependencies": {
+    "ava": "^0.25.0",
+    "cross-env": "^5.2.0",
+    "nodemon": "^1.18.3",
+    "nyc": "^12.0.2",
+    "pm2": "^3.0.3"
+  }
+}
