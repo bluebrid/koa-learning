@@ -29,6 +29,8 @@
   "homepage": "https://github.com/bluebrid/koa-learning#readme",
   "dependencies": {
     "cross-env": "^5.2.0",
+    "methods": "^1.1.2",
+    "moment": "^2.22.2",
     "nodemon": "^1.18.3"
   }
 }
