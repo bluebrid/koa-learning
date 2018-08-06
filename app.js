@@ -9,19 +9,20 @@ const app = new SKoa()
 // 实例化一个Router 对象
 const router = new Router({});
 
-router.all('/d', async (req, res) => {
+router.all('/d', async (ctx) => {
     console.log('..................')
-    res.end(`Page d ${req.method}`)
+    ctx.body = `Page d ${ctx.method}`
+    ctx.response.res.end(ctx.body)
 })
-app.use(new Logger({name: 'Demo'}).log())
-app.use(async (req, res, next) => {
+app.use(new Logger({ name: 'Demo' }).log())
+app.use(async (ctx, next) => {
     console.log('===============>')
     await next()
 })
 
 // app 引用路由中间件
 app.use(router.routes())
-app.use(async (req, res, next) => {
+app.use(async (ctx, next) => {
     console.log('=========ffffffffffffff======>')
     await next()
 })
