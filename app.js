@@ -12,7 +12,7 @@ const router = new Router({});
 router.all('/d', async (ctx) => {
     console.log('..................')
     ctx.body = `Page d ${ctx.method}`
-    ctx.response.res.end(ctx.body)
+    //ctx.response.res.end(ctx.body)
 })
 app.use(new Logger({ name: 'Demo' }).log())
 app.use(async (ctx, next) => {
