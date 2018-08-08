@@ -7,9 +7,8 @@ const host = '127.0.0.1'
 // 实例化一个Skoa 对象
 const app = new SKoa()
 // 实例化一个Router 对象
-const router = new Router({});
-
-router.all('/d', async (ctx) => {
+const router = new Router({prefix: '/user'});
+router.all('/d/:id', async (ctx) => {
     console.log('..................')
     ctx.body = `Page d ${ctx.method}`
     //ctx.response.res.end(ctx.body)
